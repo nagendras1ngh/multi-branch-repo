@@ -1,7 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage("welcome") {
+        stage("Maven Build") {
+            when {
+                branch:'develop'
+            }
             steps {
                 echo "welcome to jenkins.."
             }
