@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Maven Build") {
             when {
-                branch 'develop'
+                branch 'dev'
             }
             steps {
                 echo "welcome to jenkins.."
